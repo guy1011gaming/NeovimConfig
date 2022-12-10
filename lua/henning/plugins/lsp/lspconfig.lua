@@ -91,6 +91,24 @@ lspconfig["r_language_server"].setup({
 	on_attach = on_attach,
 })
 
+-- configure c language server
+lspconfig["clangd"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
+-- configure bash language server
+lspconfig["bashls"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
+-- configure latex server
+lspconfig["ltex"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
 -- configure lua server (with special settings)
 lspconfig["sumneko_lua"].setup({
 	capabilities = capabilities,

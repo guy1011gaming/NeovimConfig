@@ -30,6 +30,9 @@ mason_lspconfig.setup({
 		"jedi_language_server",
 		"jdtls",
 		"r_language_server",
+		"clangd",
+		"ltex",
+		"bashls",
 	},
 	-- auto-install configured servers (with lspconfig)
 	automatic_installation = true, -- not the same as ensure_installed
@@ -42,6 +45,7 @@ mason_null_ls.setup({
 		"stylua", -- lua formatter
 		"eslint_d", -- ts/js linter
 		"autopep8", -- python formatter
+		"pylint", -- python linter
 	},
 	-- auto-install configured formatters & linters (with null-ls)
 	automatic_installation = true,
